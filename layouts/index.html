@@ -1,0 +1,45 @@
+{{ partial "header.html" . }}
+<body>
+    {{ partial "singletop.html" . }}
+  <div class="container">
+    <div class="intro">
+      <figure>
+        <img src="{{ .Site.Params.coverImage }}" style="width:35%; height:35%;"/>
+      </figure>
+      <p>{{ .Site.Params.bio_top }}</p>
+      <p>{{ .Site.Params.bio_bottom }}</p>
+    </div>
+
+    <div class="row">
+      <div class="six columns recent">
+        <h3>Recent Blog Posts</h3>
+        <ul>
+          {{ range first 4 (where .Data.Pages "Section" "blog") }}
+          <li>
+            <a href="{{ .RelPermalink }}" class="title">{{ .Title }}</a>
+            <p class="desc">{{ .Description }}</p>
+          </li>
+          {{ end }}
+        </ul>
+        <a class="button" href="/blog">All Posts</a>
+      </div>
+      <div class="six columns recent">
+        <h3>Let's work together</h3>
+        <form method="POST" action="https://formspree.io/{{ .Site.Params.email }}">
+            <label for="name">Name</label>
+            <input id="name" type="text" name="Name">
+
+            <label for="email">Email</label>
+            <input id="email" type="email" name="Email">
+
+            <label for="message">Message</label>
+            <textarea id="message" name="Message"></textarea></br>
+            <input class="button-primary" type="submit" value="Submit" />
+            <input type="hidden" name="_next" value="/" />
+        </form>
+      </div>
+    </div>
+    {{ partial "footer.html" . }}
+    {{ partial "bodyend.html" . }}
+</body>
+</html>

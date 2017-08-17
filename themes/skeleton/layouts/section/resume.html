@@ -1,0 +1,12 @@
+{{ partial "header.html" . }}
+<body>
+      {{ partial "singletop.html" . }}
+
+  <div class="container">
+    <iframe src="{{ .Site.Params.resume }}" width="725" height="600" style="border: 1px solid black;"></iframe>
+  </div>
+
+  {{ partial "footer.html" . }}
+  {{ partial "bodyend.html" . }}
+</body>
+</html>

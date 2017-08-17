@@ -1,0 +1,6 @@
+name: Projects
+source:
+  - icon: fa fa-google-play
+    description: Link to Android app in Google Play store.
+    name: Scout Military
+    hyperlink: https://play.google.com/store/apps/details?id=com.scout.Scout&hl=en

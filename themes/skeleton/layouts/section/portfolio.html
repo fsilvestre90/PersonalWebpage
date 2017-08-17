@@ -1,0 +1,21 @@
+{{ partial "header.html" . }}
+<body>
+      {{ partial "singletop.html" . }}
+
+  <div class="container">
+      <h1 class="post-title"></i> <a href="#">Portfolio</a> </h1>
+        <div class="post-content-meta">
+          Below is a sampling of projects I've contributed towards
+        </div>
+        <br>
+        {{ range $i, $el := .Site.Data.projects.source }}
+          <h4>
+            <i class="{{ .icon }}"></i>&nbsp;&nbsp;
+            <strong><a href="{{ $el.hyperlink }}">{{ $el.name }}</a></strong>&nbsp;-&nbsp;{{ $el.description }}
+          </h4>
+        {{ end }}
+  </div>
+  {{ partial "footer.html" . }}
+  {{ partial "bodyend.html" . }}
+</body>
+</html>

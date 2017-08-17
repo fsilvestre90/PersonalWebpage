@@ -1,0 +1,7 @@
+name = "Skeleton"
+description = "A clean, responsive skeleton inspired template."
+license = "Apache 2.0"
+licenselink = ""
+source_repo = ""
+tags = ["skeleton", "blog", "gallery"]
+features = ["blog"]

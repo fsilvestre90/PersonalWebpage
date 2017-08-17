@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Filipe&#39;s Website</title>
+    <link>https://filipesilvestre.com/</link>
+    <description>Recent content on Filipe&#39;s Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 31 May 2050 13:32:52 -0700</lastBuildDate>
+    
+	<atom:link href="https://filipesilvestre.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Stub</title>
+      <link>https://filipesilvestre.com/portfolio/stub/</link>
+      <pubDate>Tue, 31 May 2050 13:32:52 -0700</pubDate>
+      
+      <guid>https://filipesilvestre.com/portfolio/stub/</guid>
+      <description>This page is a stub. It&amp;rsquo;s part of a hack meant to publish an archive page using Hugo. The archive page contains a list of all the pages across all sections of the website. To see how it works, check the following files
+ themes/skeleton/layouts/partials/archivelist.html &amp;ndash; The main condition here that does the magic is {{ if and (.IsPage) (.Section) (not (eq .Section &amp;quot;archive&amp;quot; )) }} themes/skeleton/layouts/section/archive.html  </description>
+    </item>
+    
+    <item>
+      <title>First post</title>
+      <link>https://filipesilvestre.com/blog/first-post/</link>
+      <pubDate>Thu, 17 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://filipesilvestre.com/blog/first-post/</guid>
+      <description>This is my first blog post.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://filipesilvestre.com/resume/blank/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://filipesilvestre.com/resume/blank/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://filipesilvestre.com/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://filipesilvestre.com/about/</guid>
+      <description>Currently based in Los Angeles, CA.
+I consider adventure to be a big part of my identity &amp;ndash; not only the thrill-seeking kind, but also the state of mind that allows me to lead a life of exploration. Some of this appetite is satisfied by biking and traveling. One of my long term goals is to attain enough financial independence to lead a life that primarily involves adventure in some capacity.</description>
+    </item>
+    
+  </channel>
+</rss>

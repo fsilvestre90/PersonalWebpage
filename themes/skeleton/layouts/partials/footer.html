@@ -1,0 +1,12 @@
+<div class="footer">
+	<hr class="thin" />
+  {{ partial "authorsocial.html" . }}
+  <p style="margin-bottom: 0">Copyright Filipe Silvestre © 2017</p>
+  <p>
+		{{ if .Site.Menus.main }}
+			{{ range sort .Site.Menus.main }}
+				<a href="{{ .URL }}">{{ .Name | lower }}</a> ·
+			{{ end }}
+		{{ end }}
+	</p>
+</div>

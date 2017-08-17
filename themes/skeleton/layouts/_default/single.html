@@ -1,0 +1,87 @@
+{{ partial "header.html" . }}
+
+<body>
+{{ partial "singletop.html" . }}
+  {{ if .Params.bannerimage }}
+    <img src="{{ .Params.bannerimage }}" style="width:100%;" />
+    <figcaption>{{ .Params.bannerimagecaption }}</figcaption>
+  {{ end }}
+  <div class="container">
+    <div class="row">
+      <section>
+        <h1 class="post-title">
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        </h1>
+
+        <div class="post-content-meta">
+          {{ if not .Params.nodate }}
+            <i class="icon-calendar"></i>
+            <span class="post-date">
+              <span class="post-date-month">{{ .Date.Format "January" }}</span>
+              <span class="post-date-day"> {{ .Date.Format "2" }}, </span>
+              <span class="post-date-year">{{ .Date.Format "2006" }}</span>
+            </span>
+          {{ end }}
+
+          {{ $Site := .Site }}
+          {{ if .Section }}
+              <span class="post-tag"> in </span>
+              <a class="post-tag" href="/{{ .Section }}">
+                <i class="icon-list-bullet"></i>{{ .Section }}</a>
+          {{ end }}
+        </div>
+
+        <div class="post-content">
+          {{ .Content }}
+          {{ if .Params.authors }}
+              - {{ delimit .Params.authors ", " }}
+          {{ else }}
+              - {{ .Site.Params.authorSignature }}
+          {{ end }}
+        </div>
+
+  			{{ if .Params.socialsharing }}
+  		    	{{ partial "socialsharing.html" . }}
+  		  {{ end }}
+      </section>
+    </div>
+
+    <div class="row paging">
+		  {{ if not .Params.nopaging }}
+        {{ if .PrevInSection }}
+        <div class="six columns">
+          <a class="paging-link" href="{{ .PrevInSection.RelPermalink }}"><i class="icon-left-open"></i> {{ .PrevInSection.Title  }}</a>
+        </div>
+        {{ end }}
+				{{ if .NextInSection }}
+        <div class="paging-newer six columns">
+          <a class="paging-link" href="{{ .NextInSection.RelPermalink }}">{{ .NextInSection.Title }} <i class="icon-right-open"></i></a>
+        </div>
+        {{ end }}
+      {{ end }}
+    </div>
+  </div>
+
+  {{ if not .Params.nocomment }}
+  <div class="container">
+    <div class="row" id="disqus_area">
+      {{ partial "disqus.html" }}
+    </div>
+  </div>
+  {{ end }}
+
+	{{ if .Params.socialsharing }}
+		<script type="text/javascript">
+			function popupShare(url) {
+				window.open(url, '_blank', 'scrollbars,resizable,height=525,width=600');
+				return false;
+			}
+		</script>
+	{{ end }}
+
+    </div>
+    {{ partial "footer.html" . }}
+  </div>
+  {{ partial "bodyend.html" . }}
+</body>
+</html>

@@ -1,0 +1,16 @@
+{{ partial "header.html" . }}
+<body>
+      {{ partial "singletop.html" . }}
+
+  <div class="container">
+      <h1 class="post-title"><a href="#">Blog Posts</a> </h1>
+        <div class="post-content-meta">
+          Long-form articles about tech, informational guides, thoughts, or anything else I find worth writing about.
+        </div>
+        <br>
+        {{ partial "corelist.html" . }}
+  </div>
+  {{ partial "footer.html" . }}
+  {{ partial "bodyend.html" . }}
+</body>
+</html>

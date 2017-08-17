@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Portfolio on Filipe&#39;s Website</title>
+    <link>https://filipesilvestre.com/portfolio/</link>
+    <description>Recent content in Portfolio on Filipe&#39;s Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 31 May 2050 13:32:52 -0700</lastBuildDate>
+    
+	<atom:link href="https://filipesilvestre.com/portfolio/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Stub</title>
+      <link>https://filipesilvestre.com/portfolio/stub/</link>
+      <pubDate>Tue, 31 May 2050 13:32:52 -0700</pubDate>
+      
+      <guid>https://filipesilvestre.com/portfolio/stub/</guid>
+      <description>This page is a stub. It&amp;rsquo;s part of a hack meant to publish an archive page using Hugo. The archive page contains a list of all the pages across all sections of the website. To see how it works, check the following files
+ themes/skeleton/layouts/partials/archivelist.html &amp;ndash; The main condition here that does the magic is {{ if and (.IsPage) (.Section) (not (eq .Section &amp;quot;archive&amp;quot; )) }} themes/skeleton/layouts/section/archive.html  </description>
+    </item>
+    
+  </channel>
+</rss>
