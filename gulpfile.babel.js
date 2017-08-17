@@ -8,8 +8,18 @@ import cssnext from "postcss-cssnext";
 import BrowserSync from "browser-sync";
 import webpack from "webpack";
 import webpackConfig from "./webpack.conf";
-var minifyCSS = require('gulp-minify-css'),
-    rename    = require('gulp-rename');
+var concat    = require('gulp-concat'),
+    rename    = require('gulp-rename'),
+    minifyCSS = require('gulp-minify-css');
+
+var fileOrder = [
+    './site/static/fontello/css/fontello.css',
+    './src/css/normalize.css',
+    './src/css/skeleton.css',
+    './src/css/main.css',
+    './src/css/highlight.css',
+    './src/css/zoom.css'
+];
 
 const browserSync = BrowserSync.create();
 
@@ -27,10 +37,13 @@ gulp.task("build-preview", ["css", "js"], (cb) => buildSite(cb, hugoArgsPreview,
 
 // Compile CSS with PostCSS
 gulp.task("css", () => (
-  gulp.src("./src/css/*.css")
-    .pipe(postcss([cssImport({from: "./src/css/main.css"}), cssnext()]))
-    .pipe(gulp.dest("./dist/css"))
-    .pipe(browserSync.stream())
+  gulp.src(fileOrder)
+      .pipe(concat('styles.css'))
+      .pipe(gulp.dest("./dist/css"))
+      .pipe(minifyCSS())
+      .pipe(rename('styles.min.css'))
+      .pipe(gulp.dest("./dist/css"))
+      .pipe(browserSync.stream())
 ));
 
 // Compile Javascript
