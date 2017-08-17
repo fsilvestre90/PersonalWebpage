@@ -8,6 +8,8 @@ import cssnext from "postcss-cssnext";
 import BrowserSync from "browser-sync";
 import webpack from "webpack";
 import webpackConfig from "./webpack.conf";
+var minifyCSS = require('gulp-minify-css'),
+    rename    = require('gulp-rename');
 
 const browserSync = BrowserSync.create();
 
