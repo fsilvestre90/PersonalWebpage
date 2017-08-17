@@ -14,7 +14,7 @@ googleAnalytics = "UA-69996700-1"
 [params]
   description = "Filipes's Website"
   author = "Filipe Silvestre"
-  bio_top = "Hi, my name is Filipe Silvestre. I am a design-minded, detail oriented software engineer passionate about combining beautiful code with beautiful design. I'm particularly interested in Machine Learning and Data Science."
+  bio_top = "Hi, my name is Filipe Silvestre. I am a design-minded, detail oriented software engineer passionate about combining beautiful code with beautiful design. I build Android and web apps with backend services. I'm particularly interested in Machine Learning and Data Science."
   bio_bottom = "I love dogs, podcasts, the outdoors, and adventure. I often think about technology, social issues, and the environment."
   authorDescription = "Filipe Silvestre is a software engineer based in Los Angeles who builds quality Android apps and backend services."
   siteDescriptors = ["blog", "dogs", "android", "software", "engineering", "software engineer", "python", "los angeles,", "outdoors", "adventure", "programming", "software", "Filipe Silvestre", "Silvestre", "Filipe"]
@@ -27,7 +27,7 @@ googleAnalytics = "UA-69996700-1"
   resume = "/files/resume.pdf"
   email = "fssilvestre5@gmail.com"
   nocomment = true
-  
+
 ## Main Menu
 [[menu.main]]
   name = "about"
