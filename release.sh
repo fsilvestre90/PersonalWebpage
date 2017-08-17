@@ -14,19 +14,14 @@ done
 
 # clean up existing build if -c was provided
 if [ $clean -eq 1 ]
-  then cd public
-  echo -e "Cleaning up public/ directory..."
+  then cd dist
+  echo -e "Cleaning up dist/ directory..."
   rm -rf *
   cd ..
 fi
 
-# update README
-cp deployment-README.md public/README.md
-
 # build site and commit
-echo -e "\033[0;32mBuilding site...\033[0m"
-hugo --theme=skeleton
-cd public
+echo -e "\033[0;32mCommitting to github...\033[0m"
 git add -A
 git commit -s -m "$msg"
 

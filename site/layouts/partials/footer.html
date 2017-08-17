@@ -1,0 +1,16 @@
+<div class="footer">
+	<hr class="thin" />
+  {{ partial "authorsocial.html" . }}
+  <p style="margin-bottom: 0"> Filipe Silvestre © 2017</p>
+  <p>
+		{{ if .Site.Menus.main }}
+			{{- range $i, $kw := .Site.Menus.main -}}
+				{{- if ne .Name "resume" -}}
+					<a href="{{ .URL }}">{{ .Name | lower }}</a> ·
+				{{ else }}
+					<a href="{{ .URL }}">{{ .Name | lower }}</a>
+				{{- end -}}
+			{{- end -}}
+		{{ end }}
+	</p>
+</div>
