@@ -1,4 +1,4 @@
-baseurl = "http://www.filipesilvestre.com/"
+baseurl = "https://www.filipesilvestre.com/"
 languageCode = "en-us"
 title = "Filipe's Website"
 pygmentsUseClasses = true
