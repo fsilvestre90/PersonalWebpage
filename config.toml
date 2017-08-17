@@ -26,7 +26,8 @@ googleAnalytics = "UA-69996700-1"
   authorSignature = "fs."
   resume = "/files/resume.pdf"
   email = "fssilvestre5@gmail.com"
-
+  nocomment = true
+  
 ## Main Menu
 [[menu.main]]
   name = "about"
