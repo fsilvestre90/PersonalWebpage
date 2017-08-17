@@ -4,7 +4,7 @@ source:
   - icon: icon-github-circled
     description: Here is a link to my github repo
     name: Github Repository
-    hyperlink: www.github.com/fsilvestre90
+    hyperlink: https://www.github.com/fsilvestre90
   - icon: icon-gplus
     description: Built the backend infrastructure and Android app. Click to download in the Google Play store.
     name: Scout Military
