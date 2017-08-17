@@ -1,7 +1,7 @@
 <div class="footer">
 	<hr class="thin" />
   {{ partial "authorsocial.html" . }}
-  <p style="margin-bottom: 0">Copyright Filipe Silvestre © 2017</p>
+  <p style="margin-bottom: 0"> Filipe Silvestre © 2017</p>
   <p>
 		{{ if .Site.Menus.main }}
 			{{ range sort .Site.Menus.main }}
@@ -9,4 +9,10 @@
 			{{ end }}
 		{{ end }}
 	</p>
+
+	  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600|Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+
+	  <!-- Styles -->
+	  <link rel="stylesheet" href="{{ .Site.BaseURL }}styles.min.css">
+
 </div>
