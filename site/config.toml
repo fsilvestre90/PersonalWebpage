@@ -4,6 +4,7 @@ title = "Filipe's Website"
 pygmentsUseClasses = true
 pluralizelisttitles = false
 googleAnalytics = "UA-69996700-1"
+enableRobotsTXT = true
 
 [permalinks]
 [taxonomies]
@@ -44,3 +45,7 @@ googleAnalytics = "UA-69996700-1"
   name = "resume"
   identifier = "resume"
   url = "/resume/"
+
+[sitemap]
+    changefreq = "weekly"
+    priority = 0.5
