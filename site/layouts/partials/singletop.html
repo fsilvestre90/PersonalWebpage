@@ -2,14 +2,14 @@
   <div class="container">
     <div class="row">
       <div class="four columns">
-        <h4><a href="/">Filipe Silvestre</a></h4>
+        <h4><a href="/" class="nav-item">Filipe Silvestre</a></h4>
       </div>
       <div class="eight columns">
         <nav>
           <ul class="nav-list">
             {{ if .Site.Menus.main }}
               {{ range sort .Site.Menus.main }}
-              <li><a href="{{ .URL }}">{{ .Name | upper }}</a></li>
+              <li><a href="{{ .URL }}" class="nav-item">{{ .Name | upper }}</a></li>
               {{ end }}
             {{ end }}
           </ul>

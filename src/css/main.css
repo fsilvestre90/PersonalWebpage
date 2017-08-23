@@ -9,6 +9,10 @@
  -moz-border-radius: 100px;
 }
 
+.profile-heading {
+  text-align: center;
+}
+
 body {
   color: #283035;
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -42,8 +46,8 @@ button.button-primary,
 input[type="submit"].button-primary,
 input[type="reset"].button-primary,
 input[type="button"].button-primary {
-  border-color: rgb(105, 128, 140);
-  background: rgb(105, 128, 140);
+  border-color: #84b4b1;
+  background: #84b4b1;
 }
 
 .button.button-primary:hover,
@@ -56,8 +60,8 @@ button.button-primary:focus,
 input[type="submit"].button-primary:focus,
 input[type="reset"].button-primary:focus,
 input[type="button"].button-primary:focus {
-  border-color: rgb(105, 128, 140);
-  background: #5a6e79;
+  border-color: #84b4b1;
+  background: #84b4b1;
 }
 
 input[type="email"]:focus, input[type="search"]:focus, input[type="text"]:focus, input[type="password"]:focus, textarea:focus, select:focus {
@@ -100,7 +104,7 @@ div.footnotes {
 /* SITE WIDE ENDS */
 
 .post-header {
-  border-bottom: 1px solid #eee;
+  background: #84b4b1
 }
 
 .post-header .container {
@@ -111,11 +115,11 @@ div.footnotes {
 }
 
 .post-header a {
-  color: #69808c;
+  color: #fff;
 }
 
 .post-header a:hover {
-  color: #a2a7ab;
+  color: #FAEBD7;
 }
 
 blockquote {
@@ -327,7 +331,7 @@ a.fork-github {
 h1.social-me a {
   font-size: 2.5rem;
   margin-right: 1rem;
-  color: #5a6e79;
+  color: #84b4b1;
 }
 
 h1.social-me a:hover {

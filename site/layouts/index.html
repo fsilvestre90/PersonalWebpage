@@ -6,6 +6,8 @@
       <figure>
         <img src="{{ .Site.Params.coverImage }}" style="width:35%; height:35%;" alt="filipe silvestre"/>
       </figure>
+      <p class="profile-heading">I'm <strong>{{ .Site.Params.author }}</strong>, a Software Engineer{{ if .Site.Params.employer }} at {{ .Site.Params.employer }}{{ end }}.
+      <br> Currently based in <strong>{{ .Site.Params.current_city }}</strong></p>
       <p>{{ .Site.Params.bio_top }}</p>
       <p>{{ .Site.Params.bio_bottom }}</p>
     </div>
